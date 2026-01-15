@@ -1,0 +1,6 @@
+module.exports = {
+  LOBBY_TIME: 30000,
+  DRAW_INTERVAL: 2500,
+  BET_AMOUNT: 10,
+  MAX_CARDS_PER_USER: 1
+};
