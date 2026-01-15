@@ -1,9 +1,9 @@
 const mongoose = require('mongoose');
-
-const UserSchema = new mongoose.Schema({
-  telegramId: { type: Number, unique: true },
+const { Schema } = mongoose;
+const UserSchema = new Schema({
+  telegramId: { type: Number, index: true },
   username: String,
-  balance: { type: Number, default: 0 }
+  displayName: String,
+  createdAt: { type: Date, default: Date.now }
 });
-
 module.exports = mongoose.model('User', UserSchema);
